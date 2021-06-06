@@ -8,19 +8,21 @@
   <title>Vanilla Javascript Nice Select2</title>
 
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,600&Inconsolata:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="dist/css/style.css">
-  <link rel="stylesheet" href="dist/css/nice-select2.css">
+	<link rel="stylesheet" href="../src/Select.css">
+	<link rel="stylesheet" href="./docs/demo/style.css">
+  <script type="module">
+    import NiceSelect from '../src/Select.js'
+     document.addEventListener("DOMContentLoaded", function(e){
+       var options = {searchable: true};
+       new NiceSelect(document.getElementById("seachable-select"), options); 
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40665301-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+       var els = document.querySelectorAll(".selectize");
 
-  gtag('config', 'UA-40665301-3');
-</script>
-
+       els.forEach(function(select){
+          new NiceSelect(select);
+        });
+     });
+  </script>
 </head>
 
 <body>
@@ -216,24 +218,9 @@
     
   </div>
   
-  <script src="dist/js/nice-select2.js"></script>
-  <script src="demo/fastclick.js"></script>
-  <script src="demo/prism.js"></script>
+  <script src="./docs/demo/fastclick.js"></script>
+  <script src="./docs/demo/prism.js"></script>
   
-  <script>
-   document.addEventListener("DOMContentLoaded", function(e){
-
-     // default
-     var els = document.querySelectorAll(".selectize");
-     els.forEach(function(select){
-       NiceSelect.bind(select);
-     });
-
-     // seachable 
-     var options = {searchable: true};
-     NiceSelect.bind(document.getElementById("seachable-select"), options); 
-   });
-  </script>
   
 </body>
 </html>
