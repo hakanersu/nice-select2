@@ -1,6 +1,26 @@
 {
-  "name": "nice-select2",
-  "version": "2.0.0",
+  "name": "@xuma/ice-select",
+  "version": "1.0.0",
   "description": "A lightweight vanilla javascript library that replaces native select elements with customizable dropdowns",
-  "main": "./src/Select.js"
+  "main": "./src/Select.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakanersu/nice-select2.git"
+  },
+  "keywords": [
+    "custom",
+    "select"
+  ],
+  "author": "Hakan ERSU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakanersu/nice-select2/issues"
+  },
+  "homepage": "https://github.com/hakanersu/nice-select2#readme"
 }
