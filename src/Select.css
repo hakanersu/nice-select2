@@ -17,7 +17,6 @@
     padding-right: 30px;
     position: relative;
     text-align: left !important;
-    transition: all 0.2s ease-in-out;
     user-select: none;
     white-space: nowrap;
     width: auto;
@@ -44,20 +43,14 @@
     position: absolute;
     right: 12px;
     top: 50%;
-    transform-origin: 66% 66%;
-    transform: rotate(45deg);
-    transition: all 0.15s ease-in-out;
     width: 5px;
 }
 
-.nice-select.open:after {
-    transform: rotate(-135deg);
-}
+.nice-select.open:after {}
 
 .nice-select.open .nice-select-dropdown {
     opacity: 1;
     pointer-events: auto;
-    transform: scale(1) translateY(0);
 }
 
 .nice-select.disabled {
@@ -113,9 +106,6 @@
     position: absolute;
     top: 100%;
     left: 0;
-    transform-origin: 50% 0;
-    transform: scale(0.75) translateY(-19px);
-    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
     z-index: 9;
     opacity: 0;
 }
@@ -142,7 +132,6 @@
     padding-left: 18px;
     padding-right: 29px;
     text-align: left;
-    transition: all 0.2s;
 }
 
 .nice-select .option:hover,
