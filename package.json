@@ -1,6 +1,6 @@
 {
   "name": "@xuma/ice-select",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A lightweight vanilla javascript library that replaces native select elements with customizable dropdowns",
   "main": "./src/Select.js",
   "directories": {
