@@ -272,6 +272,7 @@ export default class Select {
     };
 
     _onClickedOutside(e) {
+        console.log('here',e.target)
         if (!this.dropdown.contains(e.target)) {
             this.dropdown.classList.remove("open");
         }
